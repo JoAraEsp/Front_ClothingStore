@@ -1,4 +1,4 @@
-import styles from '../css/Footer.module.css'
+import styles from '../css/App.css'
 
 import LogoEmpresaFicticia from '../assets/images/Logo_TiendaRopa.png'
 

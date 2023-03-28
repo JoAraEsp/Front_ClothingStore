@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../css/Clothes.module.css';
+import styles from '../css/App.css';
 
 const ClothesList = ({ clothes }) => {
   return (

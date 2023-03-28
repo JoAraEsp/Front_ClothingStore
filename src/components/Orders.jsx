@@ -1,5 +1,5 @@
 import { useState, useRef, useContext, useEffect } from "react"
-import styles from '../css/Orders.module.css'
+import styles from '../css/App.css'
 import { Link } from 'react-router-dom'
 
 function Orders() {

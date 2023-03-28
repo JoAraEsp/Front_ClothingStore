@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import styles from '../css/NotFound.module.css'
+import styles from '../css/App.css'
 AiOutlineMeh
 import { AiOutlineMeh } from "react-icons/ai"
 

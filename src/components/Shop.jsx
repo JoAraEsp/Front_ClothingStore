@@ -1,5 +1,5 @@
 import { useState, useEffect, Component } from 'react'
-import styles from '../css/Shop.module.css'
+import styles from '../css/App.css'
 import { AiFillDelete } from "react-icons/ai"
 import { useRef } from 'react';
 import Swal from 'sweetalert2'

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import styles from "../css/Carrousel.module.css"
+import styles from "../css/App.css"
 import Card from "../components/ClothesList"
 import { Link } from 'react-router-dom'
 
