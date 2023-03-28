@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "../css/App.css"
+import styles from "../css/FormRegister.module.css"
 import { useState, useRef, useContext } from "react"
 import { Outlet, Link, useNavigate } from 'react-router-dom'
 

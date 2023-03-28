@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "../css/App.css"
+import styles from "../css/BuyingBody.module.css"
 import { Link, useLocation } from 'react-router-dom'
 import Swal from 'sweetalert2'
 

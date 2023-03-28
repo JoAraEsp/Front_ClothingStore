@@ -1,4 +1,4 @@
-import styles from '../css/App.css'
+import styles from '../css/ViewClothes.module.css'
 import { useContext, useState, useEffect } from 'react'
 import { Link, useLocation, useNavigate, Navigate } from 'react-router-dom'
 import { AiOutlineShoppingCart } from "react-icons/ai"

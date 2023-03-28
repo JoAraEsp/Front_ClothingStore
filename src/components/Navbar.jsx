@@ -1,4 +1,4 @@
-import styles from '../css/App.css'
+import styles from '../css/Navbar.module.css'
 import { Link, Navigate, useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { AiOutlineSearch } from "react-icons/ai"

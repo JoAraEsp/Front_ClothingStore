@@ -1,4 +1,4 @@
-import styles from '../css/App.css'
+import styles from '../css/Navbar.module.css'
 import { Outlet, Link } from 'react-router-dom'
 
 import Imagen1 from '../assets/images/Logo_TiendaRopa.png'
