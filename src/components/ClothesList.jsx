@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../css/Clothes.module.css';
+import Orders from './Orders'
 
 const ClothesList = ({ clothes }) => {
   return (
@@ -12,7 +13,7 @@ const ClothesList = ({ clothes }) => {
               <h5 className="title">{clothing.name}</h5>
               <p className="text">{clothing.description}</p>
               <p className="text">${clothing.price}</p>
-              <button className="btn-primary" target="_blank">Comprar</button>
+              <button className="btn-primary" target="_blank" onClick={Orders}>Comprar</button>
             </div>
           </div>
         </div>
