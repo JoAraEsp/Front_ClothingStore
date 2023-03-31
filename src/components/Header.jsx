@@ -14,6 +14,7 @@ function Header() {
                 <Link to="/login">Iniciar sesión</Link>
                 <Link to="/register">Registrarse</Link>
                 <Link to="/order">Orden</Link>
+                <Link to="/refund">Refund</Link>
             </div>
         </header>
     );

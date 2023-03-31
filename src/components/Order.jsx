@@ -10,8 +10,7 @@ function Order() {
   const [bearerToken, setBearerToken] = useState(JSON.parse(localStorage.getItem("user-token")));
 
   const handleIdChange = (e) => {
-    const value = e.target.value
-    setId(value);
+    setId(e.target.value);
   };
 
   const handleEstadoChange = (e) => {

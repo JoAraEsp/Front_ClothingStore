@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import FormOrder from './pages/FormOrder';
 import Login from './pages/LoginPage';
 import Register from './pages/RegisterPage';
+import RefundPage from './pages/RefundPage';
 
 function App() {
   const [registerData, setRegisterData] = useState({})
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/order' element={<FormOrder />} />
+          <Route path='/refund' element={<RefundPage />} />
           <Route path='/register' element={<Register setRegisterData={setRegisterData}/>}/>
           <Route path='/login' element={<Login registerData={registerData} />}/>
         </Routes>
