@@ -1,0 +1,33 @@
+.footer {
+    background-color: #272323;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer__logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer__logo {
+    height: 60px;
+    margin-right: 20px;
+  }
+  
+  .footer__rights {
+    font-size: 12px;
+    margin: 0;
+  }
+  
+  .footer__info-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer__info {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
