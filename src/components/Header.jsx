@@ -13,6 +13,7 @@ function Header() {
             <div className="button-container">
                 <Link to="/login">Iniciar sesión</Link>
                 <Link to="/register">Registrarse</Link>
+                <Link to="/order">Orden</Link>
             </div>
         </header>
     );
