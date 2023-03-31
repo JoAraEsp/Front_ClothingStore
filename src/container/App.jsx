@@ -20,7 +20,6 @@ import ProductClothes from '../pages/ProductClothes';
 function App() {
 
     const [user, setUser] = useState(JSON.parse(localStorage.getItem("user-info")));
-    const [authorities, setAuthorities] = useState(JSON.parse(localStorage.getItem("user-authorities")));
   
     
   

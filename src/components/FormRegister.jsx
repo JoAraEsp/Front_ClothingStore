@@ -20,21 +20,16 @@ function Register() {
 
         const formData = new FormData(form.current);
 
-        fetch('http://localhost:8080/user/nuevo', {
+        fetch('http://localhost:8080/user', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
                 name: formData.get('name'),
-                lastName: formData.get('lastname'),
-                userName: formData.get('username'),
+                cardNumber: formData.get('cardNumber'),
                 email: formData.get('email'),
                 password: formData.get('password'),
-                address: formData.get('address'),
-                phoneNumber: formData.get('phone'),
-                birth: formData.get('birthday')
-
             })
         })
         .then ((responseHttp) => {
@@ -93,15 +88,6 @@ function Register() {
                         />
                     </label>
                     <label className={styles.label}>
-                        <span>Apellido</span>
-                        <input className={styles.input}
-                            type="text"
-                            name='lastname'
-                            id='lastname'
-                            required
-                        />
-                    </label>
-                    <label className={styles.label}>
                         <span>E-mail</span>
                         <input className={styles.input}
                             type="email"
@@ -111,11 +97,11 @@ function Register() {
                         />
                     </label>
                     <label className={styles.label}>
-                        <span>Username</span>
+                        <span>Card Number</span>
                         <input className={styles.input}
                             type="text"
-                            name='username'
-                            id='username'
+                            name='cardNumber'
+                            id='cardNumber'
                             required
                         />
                     </label>
@@ -125,33 +111,6 @@ function Register() {
                             type="password"
                             name='password'
                             id='password'
-                            required
-                        />
-                    </label>
-                    <label className={styles.label}>
-                        <span>Numero de telefono</span>
-                        <input className={styles.input}
-                            type="text"
-                            name='phone'
-                            id='phone'
-                            required
-                        />
-                    </label>
-                    <label className={styles.label}>
-                        <span>Direccion</span>
-                        <input className={styles.input}
-                            type="text"
-                            name='address'
-                            id='address'
-                            required
-                        />
-                    </label>
-                    <label className={styles.label}>
-                        <span>Año de nacimiento</span>
-                        <input className={styles.input}
-                            type="date"
-                            name='birthday'
-                            id='birthday'
                             required
                         />
                     </label>

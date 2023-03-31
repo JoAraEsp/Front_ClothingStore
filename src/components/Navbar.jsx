@@ -11,7 +11,6 @@ import Imagen1 from '../assets/images/Logo_TiendaRopa.png'
 
 function Navbar(params) {
 
-    const [authorities, setAuthorities] = useState(JSON.parse(localStorage.getItem("user-authorities")));
     const [user, setUser] = useState(JSON.parse(localStorage.getItem("user-info")))
 
 
@@ -44,16 +43,6 @@ function Navbar(params) {
 
                         user
                             ?
-                            authorities.length > 1
-                                ?
-                                <>
-                                    <ActionButton redirectTo={"/admin"} text="Admin" />
-                                    <Link to={"/logout"} className={`${styles.actionButton} ${styles.actionButtonLogout}`} >
-                                        <AiOutlinePoweroff />
-                                    </Link>
-
-                                </>
-                                :
                                 <>
                                     <ActionButton redirectTo={"/order"} text="Compras" />
                                     <ActionButton redirectTo={"/cart"} text="Carrito" />

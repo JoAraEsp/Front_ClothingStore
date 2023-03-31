@@ -22,13 +22,13 @@ function FormLogin() {
   const login = (e) => {
     e.preventDefault();
 
-    fetch('http://localhost:8080/user/login', {
+    fetch('http://localhost:9292/auth/token', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        'userName': email,
+        'name': email,
         'password': password
       })
     })
@@ -44,7 +44,7 @@ function FormLogin() {
 
 
   const GetUser = () => {
-    fetch(`http://localhost:8080/user/username/${data.userName}`)
+    fetch(`http://localhost:8080/user/name/${email}`)
       .then(res => res.json())
       .then(data => {
         setUser(data.data)
@@ -55,7 +55,6 @@ function FormLogin() {
     
     localStorage.setItem("user-token", JSON.stringify(bearerToken))
     localStorage.setItem("user-info", JSON.stringify(user))
-    localStorage.setItem("user-authorities", JSON.stringify(authorities))
 
     window.location.reload(true);
 
@@ -93,7 +92,7 @@ function FormLogin() {
 
           <label className={styles.label}>
             <span >E-mail</span>
-            <input className={styles.input} type="userName" onChange={(e) => setEmail(e.target.value)} required />
+            <input className={styles.input} type="name" onChange={(e) => setEmail(e.target.value)} required />
           </label>
 
           <label className={styles.label}>
