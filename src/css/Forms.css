@@ -3,12 +3,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
   }
   
   form {
     background-color: #272323;
-    padding: 20px;
+    padding: 5px;
     border-radius: 10px;
   }
   

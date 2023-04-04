@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import '../css/Header.css';
-import logo from '../assets/img/Logo_TiendaRopa.png'
+import logo from '../assets/img/logo-removebg.png'
 
 function Header() {
     return (
@@ -11,9 +11,8 @@ function Header() {
                 <Link to="/"><img src={logo} alt="Logo de la empresa" /></Link>
             </div>
             <div className="button-container">
-                <Link to="/login">Iniciar sesión</Link>
-                <Link to="/register">Registrarse</Link>
-                <Link to="/order">Orden</Link>
+                <Link to="/order">Order</Link>
+                <Link to="/refund">Refund</Link>
             </div>
         </header>
     );
