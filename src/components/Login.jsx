@@ -51,7 +51,7 @@ function Login() {
     window.location.reload(true);
 
     return (
-      < Navigate to="/" replace={true} />
+      < Navigate to="/order" replace={true} />
     )
 
   }
